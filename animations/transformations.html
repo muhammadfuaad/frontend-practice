@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box-one {
+      width: 10rem;
+      height: 10rem;
+      background-color: aqua;
+      transition: transform 0.5s ease-in;
+    }
+    .box-one:hover {
+      transform: scale(0.5) rotate(45deg);
+    }
+
+    .box-two {
+      width: 10rem;
+      height: 10rem;
+      background-color: tomato;
+      transition: transform 0.5s ease-out;
+    }
+    .box-two:hover {
+      transform: translate(100px, 100px);
+    }
+  
+    .box-three {
+      width: 10rem;
+      height: 10rem;
+      background-color: rgb(166, 195, 195);
+      transition: transform 0.3s ease-out;
+    }
+    .box-three:hover {
+      transform: skew(-45deg);
+    }
+  </style>
+</head>
+<body>
+  <div class="box-one">
+    <h1>Box</h1>
+  </div>
+  <div class="box-two">
+    <h1>Box</h1>
+  </div>
+  <div class="box-three">
+    <h1>Box</h1>
+  </div>
+</body>
+</html>

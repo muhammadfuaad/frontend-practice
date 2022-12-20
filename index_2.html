@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<style>
+  body {
+    background-color: lightgrey;
+  }
+  .box-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .box {
+    background-color: orange;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: last baseline;
+  }
+  #box-one{
+    flex-grow: 2;
+  }
+</style>
+<body>
+  <div class="box-section">
+    <div class="box" id="box-one">box-1</div> 
+    <div class="box" id="box-two">box-2</div>
+    <div class="box" id="box-three">box-3</div> 
+    <div class="box" id="box-four">box-4</div>
+  </div>
+</body>

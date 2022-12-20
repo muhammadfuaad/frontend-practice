@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      padding: 1rem;
+    }
+    label {
+      display: block;
+    }
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    input {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0.5rem 0.7rem;
+    }
+    input:focus {
+      border-color: aqua;
+      outline: 0;
+      box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);
+    }
+    button {
+      background-color: blue;
+      color: white;
+      border: 0;
+      padding: 0.5rem 0.7rem;
+      border-radius: 5px;
+      outline: 0;
+    }
+  </style>
+  <body>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name"/>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email"/>
+      </div>
+    </form>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+    <form>
+      <input type="text" list="countries" autocomplete="off" />
+      <datalist id="countries">
+        <option data-value="1">Lahore</option>
+        <option data-value="2">Karachi</option>
+        <option data-value="3">Multan</option>
+      </datalist>
+    </form>
+  </body>
+</html>
